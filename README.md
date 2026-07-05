@@ -1,6 +1,5 @@
-# AI-Powered-Chabot-Document-Analysis
-An AI-powered chatbot for intelligent PDF document analysis and conversational question answering using Large Language Model.
 # 🤖 AI-Powered Document Intelligence System
+An AI-powered chatbot for intelligent PDF document analysis and conversational question answering using Large Language Model.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![AI](https://img.shields.io/badge/Artificial%20Intelligence-Generative%20AI-green)
