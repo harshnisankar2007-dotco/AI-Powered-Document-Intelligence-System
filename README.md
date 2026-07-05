@@ -1,159 +1,170 @@
-# 🤖 AI-Powered Document Intelligence System
-An AI-powered chatbot for intelligent PDF document analysis and conversational question answering using Large Language Model.
+### 🤖 AI Document Assistant
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![AI](https://img.shields.io/badge/Artificial%20Intelligence-Generative%20AI-green)
-![LLM](https://img.shields.io/badge/LLM-Google%20Gemini-orange)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+AI-powered Document Intelligence System built using Streamlit and Google Gemini AI for intelligent analysis of PDFs, Excel files, and Images. The application supports OCR extraction, document summarization, entity extraction, invoice analysis, security risk detection, and conversational question answering.
 
----
+### 🚀 Features
 
-## 📖 Overview
+* 🔐 User Login System
 
-The **AI-Powered Document Intelligence System** is an intelligent chatbot capable of understanding PDF documents and answering user questions using Large Language Models (LLMs).
+* 📄 PDF Text Extraction using pdfplumber
 
-The system enables users to upload documents, retrieve relevant information instantly, and interact naturally through conversational AI.
+* 📷 OCR Support for scanned PDFs using Tesseract OCR
 
-This project demonstrates the practical application of **Generative AI**, **Natural Language Processing (NLP)**, and **Retrieval-Augmented Generation (RAG)** techniques for intelligent document analysis.
+* 📊 Excel File Analysis with pandas
 
----
+* 🖼️ Image Content Analysis using Gemini Vision
 
-## 🎓 Project Background
+* 🧠 AI-Powered Chat Interface
 
-This project was inspired by my **20-day Industrial Internship at Chennai Petroleum Corporation Limited (CPCL)**.
+* 📑 Document Summarization
 
-To respect confidentiality, this repository contains a **public portfolio implementation** created for learning and demonstration purposes. No confidential company data, source code, or internal documents are included.
+* 📌 Key Point Extraction
 
----
+* 🏷️ Entity Extraction (Names, Emails, Dates, GST, Amounts, etc.)
 
-# ✨ Features
+* 🧾 Invoice Analysis
 
-- 📄 PDF Upload
-- 🤖 AI-powered Chatbot
-- 💬 Conversational Question Answering
-- 🔍 Intelligent Information Retrieval
-- 📚 Semantic Search
-- ⚡ Fast Response Generation
-- 🧠 Context-Aware Answers
-- 🎯 User-Friendly Interface
+* 🛡️ Security & Compliance Risk Detection
 
----
+* 🔍 Page-wise Intelligent Search
 
-# 🛠 Technologies Used
+* ⚡ Real-time AI Responses
 
-| Category | Technologies |
-|-----------|--------------|
-| Programming | Python |
-| AI Model | Google Gemini |
-| Framework | LangChain |
-| Vector Database | FAISS |
-| Frontend | Streamlit |
-| PDF Processing | PyPDF2 |
-| Embeddings | Sentence Transformers |
+### 🛠️ Technology Stack
 
----
+| Category         | Technologies            |
+| ---------------- | ----------------------- |
+| Frontend         | Streamlit               |
+| AI Model         | Google Gemini 2.5 Flash |
+| PDF Processing   | pdfplumber              |
+| OCR              | pytesseract             |
+| Image Conversion | pdf2image               |
+| Data Analysis    | pandas                  |
+| Image Handling   | Pillow (PIL)            |
+| Language         | Python                  |
 
-# 📂 Project Structure
+### 📂 Project Structure
 
-```
-AI-Powered-Document-Intelligence-System
+cpcl-genai-document-chatbot/
 
 │
-├── app.py
-├── requirements.txt
+
+├── login.py # Login and authentication page
+
+├── text.py # Main AI Document Assistant logic
+
+├── requirements.txt # Project dependencies
+
 ├── README.md
-├── LICENSE
+
 │
-├── src/
-│     chatbot.py
-│     pdf_loader.py
-│     vector_store.py
-│     prompt.py
-│     utils.py
-│
-├── screenshots/
-│
-├── images/
-│
-├── docs/
-│
-└── data/
-```
 
----
+├── images/ # Screenshots
 
-# 🚀 Workflow
+├── docs/ # Project report / presentation
 
-```
-Upload PDF
+└── sample_files/ # Sample PDFs or Excel files
 
-↓
+### ⚙️ Installation
 
-Extract Text
+1. Clone the repository
 
-↓
+git clone [https://github.com/your-username/cpcl-genai-document-chatbot.git](https://github.com/your-username/cpcl-genai-document-chatbot.git)
 
-Split into Chunks
+cd cpcl-genai-document-chatbot
 
-↓
+2. Install dependencies
 
-Generate Embeddings
+pip install -r requirements.txt
 
-↓
+3. Configure Gemini API Key
 
-Store in Vector Database
+Replace the API key in text.py:
 
-↓
+client = genai.Client(
 
-User Question
+api_key="YOUR_API_KEY"
 
-↓
+)
 
-Similarity Search
+4. Run the application
 
-↓
+streamlit run login.py
 
-Google Gemini
+### 📸 Screenshots
 
-↓
+* 🏠 Login Page
 
-AI Response
-```
+* 📄 PDF Upload Interface
 
----
+* 💬 AI Chat Interface
 
-# 📸 Screenshots
+* 📊 Document Analytics Dashboard
 
-*(To be added after implementation.)*
+* 🖼️ Image Analysis Results
 
----
+### 🧠 Example Queries
 
-# 📈 Future Enhancements
+* "Summarize this document"
 
-- Voice Assistant
-- OCR Support
-- Multi-language Translation
-- Mobile Application
-- Cloud Deployment
-- Image Understanding
-- Real-time Document Collaboration
+* "Extract all key points"
 
----
+* "Analyze this invoice"
 
-# 👩‍💻 Author
+* "List all dates mentioned"
 
-**Harshni Sankar**
+* "Extract GST numbers"
 
-B.E. Electronics and Communication Engineering
+* "Find security risks in the document"
 
-Vellore Institute of Technology (VIT)
+* "What is the total amount?"
 
-GitHub:
-https://github.com/harshnisankar2007-dotco
+* "Identify the document type"
 
-LinkedIn:
-https://www.linkedin.com/in/harshni-sankar-166062373
+### 📈 Future Enhancements
 
----
+* 🔎 Vector database integration (FAISS / ChromaDB)
 
-## ⭐ If you found this project useful, consider giving it a star!
+* 📚 Multi-document search
+
+* 🌐 Cloud deployment
+
+* 🔐 Database-backed authentication
+
+* 📤 Export chat history
+
+* 📱 Mobile-responsive UI improvements
+
+* 🗂️ Support for Word and PowerPoint files
+
+### 🎯 Key Learning Outcomes
+
+* Generative AI Integration
+
+* Document Intelligence
+
+* OCR Processing
+
+* Prompt Engineering
+
+* Streamlit Application Development
+
+* AI-based Information Retrieval
+
+* Data Extraction & Analytics
+
+### 👩‍💻 Author
+
+Harshni Sankar
+
+B.E. Electronics and Communication Engineering (ECE)
+
+CPCL Internship Project
+
+AI & Embedded Systems Enthusiast
+
+### 📜 License
+
+This project is licensed under the MIT License.
+
+⭐ If you found this project useful, consider giving it a star on GitHub!
