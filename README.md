@@ -1,3 +1,7 @@
+### AI Document Assistant – Generative AI Powered Document Intelligence System
+
+Built with Streamlit, Google Gemini AI, OCR, PDF Processing, and Conversational AI
+
 ### 🤖 AI Document Assistant
 
 AI-powered Document Intelligence System built using Streamlit and Google Gemini AI for intelligent analysis of PDFs, Excel files, and Images. The application supports OCR extraction, document summarization, entity extraction, invoice analysis, security risk detection, and conversational question answering.
